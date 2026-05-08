@@ -76,7 +76,7 @@ function Esempi() {
           <label>Testo</label>
           <input name="testo" type="text" placeholder="Inserisci il testo..." className="w-full p-2 border rounded" value={esempioForm.testo} onChange={gestisciInput}/>
         </div>
-        <button type="submit" className="bg-blue-500 text-white px-4 py-2 rounded" >Crea</button>
+        <button  type="button" class="text-white bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-base text-sm px-4 py-2.5 text-center leading-5 rounded-full" >Crea</button>
       </form>
 
             <div>
@@ -87,7 +87,7 @@ function Esempi() {
                                 <p className="font-medium">Testo : {esempio.testo}</p>
                                 
                             <div className="space-x-3 mt-[15px]">
-                                    <button className="bg-red-500 text-white px-2 py-1 rounded mt-2" onClick={() => eliminaEsempio(esempio.id)}>Elimina</button>
+                                    <button type="button" class="text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-base text-sm px-4 py-2.5 text-center leading-5 rounded-full" onClick={() => eliminaEsempio(esempio.id)}>Elimina</button>
 
                                         {modificaEsempioForm.id === esempio.id && (
                                           <div className="mt-4 p-3 border rounded bg-gray-50">
@@ -104,7 +104,7 @@ function Esempi() {
                                             className="w-full p-2 border rounded mb-2"
                                             />
                                             <button 
-                                            className="bg-yellow-500 text-white px-3 py-1 rounded"
+                                            type="button" class="text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-base text-sm px-4 py-2.5 text-center leading-5 rounded-full"
                                             onClick={() => {
                                               modificaEsempio(esempio.id);
                                             }}
@@ -114,7 +114,7 @@ function Esempi() {
                                           </div>
                                         )}
                                         <button 
-                                          className="bg-blue-500 text-white px-2 py-1 rounded mt-2 ml-2"
+                                          type="button" class="text-white bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-base text-sm px-4 py-2.5 text-center leading-5 rounded-full"
                                           onClick={() => setModificaEsempioForm({id: esempio.id, testo: esempio.testo})}
                                         >
                                           Modifica
