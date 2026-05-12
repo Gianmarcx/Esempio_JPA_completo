@@ -4,6 +4,7 @@ const navLinks = [
   { to: "/", label: "Home", icon: "🏠" },
   { to: "/esempi", label: "Esempi", icon: "📋" },
   { to: "/login", label: "Login", icon: "🔐" },
+  {to: "/prodotti", label:"Prodotti", icon:"📦"}
 ];
 
 function Layout() {
